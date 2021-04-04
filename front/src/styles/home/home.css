@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500&display=swap");
+.home {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 300px;
+  padding: 30px 8% 0rem 8%;
+  background-color: #0C0D1C;
+}
+
+.home ::-webkit-scrollbar {
+  background: transparent;
+  height: 0;
+}
+
+.home .slider {
+  position: relative;
+  width: 80%;
+  max-width: 500px;
+  height: 100%;
+  max-height: 340px;
+  margin: auto;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.home .slider .inner {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 8%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home .slider .inner .item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 256px;
+  height: 100%;
+  position: relative;
+}
+
+.home .slider .inner .item .item_img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.home .slider .inner .item .item_img .img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.home .slider .inner .item .item_img .filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.home .slider .inner .item .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  text-align: right;
+  padding-right: 8%;
+  color: #fff;
+}
+
+.home .slider .inner .item .content h2 {
+  font-size: 2.4rem;
+}
+
+.home .slider .inner .item .content p {
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .home ::-webkit-scrollbar {
+    background: transparent;
+    height: 0;
+  }
+  .home .slider {
+    max-height: none;
+    scrollbar-width: none;
+  }
+  .home .slider .inner .item {
+    width: 500px;
+  }
+}
+/*# sourceMappingURL=home.css.map */

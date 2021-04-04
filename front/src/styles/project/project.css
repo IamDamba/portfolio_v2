@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500&display=swap");
+.project .project_image {
+  position: relative;
+  height: 524px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.project .project_image .project_image_img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.project .project_image .project_image_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.project .project_image .project_image_img .project_image_img_filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.project .project_image .project_image_content {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  text-align: center;
+}
+
+.project .project_image .project_image_content h1 {
+  font-size: 3.4rem;
+}
+
+.project .project_image .project_image_content h2 {
+  font-size: 2.4rem;
+}
+
+.project .project_detail {
+  width: 100%;
+  padding: 30px 8%;
+  margin-bottom: 30px;
+}
+
+.project .project_detail .project_detail_menu {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+}
+
+.project .project_detail .project_detail_menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.project .project_detail .project_detail_menu li p {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #BFBFBF;
+}
+
+.project .project_detail .project_detail_menu li a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #BFBFBF;
+  text-decoration: underline;
+}
+
+.project .project_description {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+}
+
+.project .project_description .content {
+  width: 100%;
+  max-width: 411px;
+  padding: 30px 8%;
+  text-align: center;
+}
+
+.project .project_description .content h3, .project .project_description .content p {
+  margin-bottom: 20px;
+}
+
+.project .project_description .content p {
+  text-align: justify;
+}
+
+@media screen and (min-width: 540px) and (max-width: 1024px) {
+  .project .project_detail .project_detail_menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project .project_description {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .project .project_information {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    -ms-grid-rows: auto;
+    -ms-grid-columns: 50% 50%;
+        grid-template: auto/ 50% 50%;
+    width: 100%;
+    padding: 0 10%;
+  }
+  .project .project_information .project_description {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .project .project_information .project_description .content {
+    text-align: left;
+    width: 100%;
+    max-width: 611px;
+  }
+  .project .project_information .project_description .content h3, .project .project_information .project_description .content p {
+    margin-bottom: 20px;
+  }
+  .project .project_information .project_description .content p {
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .project .project_image {
+    position: relative;
+    height: 724px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .project .project_image .project_image_content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
+    text-align: center;
+  }
+  .project .project_image .project_image_content h1 {
+    font-size: 6.4rem;
+  }
+  .project .project_image .project_image_content h2 {
+    font-size: 4.4rem;
+  }
+  .project .project_information {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    -ms-grid-rows: auto;
+    -ms-grid-columns: 50% 50%;
+        grid-template: auto/ 50% 50%;
+    width: 100%;
+    padding: 0 10%;
+  }
+  .project .project_information .project_description {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .project .project_information .project_description .content {
+    text-align: left;
+    width: 100%;
+    max-width: 611px;
+  }
+  .project .project_information .project_description .content h3, .project .project_information .project_description .content p {
+    margin-bottom: 20px;
+  }
+  .project .project_information .project_description .content p {
+    text-align: justify;
+  }
+}
+/*# sourceMappingURL=project.css.map */

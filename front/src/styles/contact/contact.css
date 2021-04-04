@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500&display=swap");
+.contact {
+  padding: 0px;
+}
+
+.contact .contact_information {
+  width: 100%;
+  max-width: 411px;
+  text-align: center;
+  padding: 0 8%;
+}
+
+.contact .contact_information form div {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.contact .contact_information form div:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.contact .contact_information form div input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  padding: 0 20px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: #EAEBF6;
+}
+
+.contact .contact_information form div textarea {
+  outline: none;
+  width: 100%;
+  height: 120px;
+  padding: 0 20px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  resize: none;
+  color: #EAEBF6;
+}
+
+.contact .contact_information form div button {
+  padding: 10px 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #D292AB;
+  border: none;
+  color: #EAEBF6;
+}
+
+.contact .contact_information form .error-form {
+  color: red;
+  text-align: left;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+.contact .contact_information form .error-form p {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+.contact .contact_information form .message-length {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 540px) and (max-width: 1023px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact .contact_information {
+    max-width: 811px;
+  }
+  .contact .contact_information form {
+    max-width: 645px;
+    width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .contact_information {
+    max-width: 1200px;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+  }
+  .contact .contact_information .contact_information_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .contact .contact_information .contact_information_header .contact_information_get_touch {
+    text-align: right;
+    max-width: 200px;
+  }
+  .contact .contact_information form {
+    max-width: 645px;
+    width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

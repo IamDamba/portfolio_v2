@@ -1,0 +1,168 @@
+@import '../fonts/fonts';
+
+.project{
+    .project_image{
+        position: relative;
+        height: 524px;
+        width: 100%;
+        margin-bottom: 30px;
+
+        .project_image_img{
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }.project_image_img_filter{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba($color: #000, $alpha: .3);
+            }
+        }.project_image_content{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -30%);
+            text-align: center;
+
+            h1{
+                font-size: 3.4rem;
+            }h2{
+                font-size: 2.4rem;
+            }
+        }
+    }.project_detail{
+        width: 100%;
+        padding: 30px 8%;
+        margin-bottom: 30px;
+
+        .project_detail_menu{
+            display: grid;
+            grid-gap: 30px;
+
+            li{
+                display: flex;
+                column-gap: 30px;
+
+                p{
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: $color_link_inactive;
+                }a{
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: $color_link_inactive;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }.project_description{
+        display: grid;
+        width: 100%;
+
+        .content{
+            width: 100%;
+            max-width: 411px;
+            padding: 30px 8%;
+            text-align: center;
+
+            h3, p{
+                margin-bottom: 20px;
+            }p{
+                text-align: justify;
+            }
+        }
+    }
+    
+    @media screen {
+        @media (min-width: 540px) and (max-width: 1024px){
+            .project_detail{
+                .project_detail_menu{
+                   justify-content: center;
+                }
+            }.project_description{
+                justify-content: center;
+            }
+        }
+        @media (min-width: 1025px) and (max-width: 1440px){
+            .project_information{
+                display: grid;
+
+                grid-auto-flow: column;
+                grid-template: auto/ 50% 50%;
+                width: 100%;
+                padding: 0 10%;
+                
+                .project_description{
+                    justify-content: flex-start;
+
+                    .content{
+                        text-align: left;
+                        width: 100%;
+                        max-width: 611px;
+
+                        h3, p{
+                            margin-bottom: 20px;
+                        }p{
+                            text-align: justify;
+                        }
+                    }
+                }
+            }
+        }
+        @media (min-width: 1441px){
+            .project_image{
+                position: relative;
+                height: 724px;
+                width: 100%;
+                margin-bottom: 30px;
+        
+                .project_image_content{
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%, -30%);
+                    text-align: center;
+        
+                    h1{
+                        font-size: 6.4rem;
+                    }h2{
+                        font-size: 4.4rem;
+                    }
+                }
+            }.project_information{
+                display: grid;
+
+                grid-auto-flow: column;
+                grid-template: auto/ 50% 50%;
+                width: 100%;
+                padding: 0 10%;
+
+                .project_detail{
+                    .project_detail_menu{
+                    }
+                }.project_description{
+                    justify-content: flex-start;
+
+                    .content{
+                        text-align: left;
+                        width: 100%;
+                        max-width: 611px;
+
+                        h3, p{
+                            margin-bottom: 20px;
+                        }p{
+                            text-align: justify;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500&display=swap");
+.about {
+  padding: 80px 0;
+}
+
+.about .about_information {
+  width: 100%;
+  max-width: 411px;
+  text-align: center;
+  padding: 0 8%;
+}
+
+.about .about_information h1 {
+  font-size: 3.4rem;
+  margin-bottom: 30px;
+}
+
+.about .about_information h2 {
+  font-size: 2.4rem;
+}
+
+.about .about_information p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.about .about_information p:nth-last-child(2) {
+  margin-bottom: 60px;
+}
+
+.about .about_information button {
+  padding: 10px 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #D292AB;
+  border: none;
+  color: #EAEBF6;
+}
+
+@media screen and (min-width: 540px) and (max-width: 1023px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .about_information {
+    max-width: 811px;
+  }
+}
+/*# sourceMappingURL=about.css.map */

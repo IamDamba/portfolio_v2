@@ -1,0 +1,96 @@
+@import '../fonts/fonts';
+
+.news{
+    .news_information{
+        width: 100%;
+        max-width: 411px;
+        text-align: center;
+        padding: 0 8%;
+
+            .news_information_posts{
+                display: grid;
+                width: 100%;
+                margin-bottom: 50px;
+                justify-content: center;
+            }.news_information_pagination{
+                display: flex;
+                margin: 0 auto;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 345px;
+
+                .news_information_pagination_previous, .news_information_pagination_next{
+                    font-size: 1.6em;
+                    color: $color_text;
+                    cursor: pointer;
+                }.news_information_pagination_numbers{
+                    display: flex;
+                    column-gap: 15px;
+
+                    li{
+                        a{
+                            color: $color_text;
+                        }.active{
+                            color: $color_link_active;
+                        }
+                    }
+                }
+            }
+    }
+
+    @media screen {
+        @media (min-width: 540px) and (max-width: 1023px){
+            display: flex;
+            justify-content: center;
+
+            .news_information{
+                max-width: 811px;
+
+                .news_information_main{
+                    .news_information_posts{
+                        grid-template: auto auto / auto auto;
+                        grid-column-gap: 30px;
+                    }
+                }
+            }
+        }
+        @media (min-width: 1024px) and (max-width: 1439px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .news_information{
+                max-width: 1200px;
+                display: grid;
+                justify-items: center;
+            }
+        }
+        @media (min-width: 1440px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0 40px 0;
+
+            .news_information{
+                max-width: 1200px;
+                display: grid;
+                justify-items: center;
+
+                .news_information_main{
+                    width: 100%;
+                    display: grid;
+                    justify-content: center;
+
+                    .news_information_posts{
+                        max-width: 900px;
+                        grid-template: auto auto / auto auto;
+                        grid-column-gap: 80px;
+                        justify-content: space-between;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
