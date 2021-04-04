@@ -1,2 +1,4 @@
 .env
+.vscode
+exemple.json
 node_modules

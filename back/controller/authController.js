@@ -3,6 +3,8 @@ const firestore = firebase.firestore();
 const storage = firebase.storage();
 const ref = firestore.collection("projects");
 const gsRef = storage.ref().child('cv.pdf');
+const https = require('https');
+const request = require('request');
 
 global.XMLHttpRequest = require("xhr2");
 
@@ -57,7 +59,7 @@ module.exports.cv_get = async (req, res) => {
     gsRef
       .getDownloadURL()
       .then((url) => {
-        res.status(200).send(url);
+        res.status(200).send(url); 
       })
       .catch((err) => {
         res.status(400).json({ error: err.message });

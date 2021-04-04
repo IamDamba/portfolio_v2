@@ -15,14 +15,14 @@ const path = require('path');
 
 app.use(express.json());
 app.use(cors());
-app.use(express.static('front/build'));
+app.use(express.static(path.join(__dirname, 'front/build')));
 
 //------------------| ROUTE
 
-app.get('/*', (_, res)=>{
-  res.sendFile(__dirname, 'front/build/index.html');
-})
 app.use(router);
+app.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'front/build', 'index.html'));
+});
 
 //------------------| CONNECTION
 
