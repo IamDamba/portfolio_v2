@@ -9,7 +9,6 @@ import {
 
 import App from "./App";
 import Found404 from "./components/found404/Found404";
-
 import "./styles/index/index.css";
 
 ReactDOM.render(
