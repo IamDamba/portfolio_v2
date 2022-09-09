@@ -1,4 +1,5 @@
 .env
 .vscode
 exemple.json
-node_modules
+*node_modules
+.vercel

@@ -1,19 +1,16 @@
 {
   "name": "portfolio_v2",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "license": "MIT",
   "homepage": "https://iamdamba.herokuapp.com/",
-  "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
-    "client": "cd front && yarn start",
-    "install-client": "cd front && yarn install",
-    "heroku-postbuild": "yarn install-client && yarn build",
-    "build": "cd front && yarn build"
-  },
   "engines": {
     "node": "14.x"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "cd client && yarn build"
   },
   "dependencies": {
     "cors": "^2.8.5",
