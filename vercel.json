@@ -6,22 +6,22 @@
       "use": "@vercel/node"
     },
     {
-      "src": "./vercel/output/assets/**",
+      "src": "./client/dist/assets/**",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/"
+      "dest": "index.js"
     },
     {
-      "src": "/assets/(.+)",
-      "dest": "/vercel/output/assets/$1"
+      "src": "/assets/(.*)",
+      "dest": "/client/dist/assets/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "index.js"
     }
   ]
 }

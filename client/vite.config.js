@@ -12,7 +12,7 @@ export default defineConfig({
       },
     },
   },
-  build: {
-    outDir: path.join(__dirname, "../vercel/output"),
-  },
+  // build: {
+  //   outDir: path.join(__dirname, "../vercel/output"),
+  // },
 });
