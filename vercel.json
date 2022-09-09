@@ -16,7 +16,7 @@
       "dest": "/"
     },
     {
-      "src": "/assets/(.*)",
+      "src": "/assets/(.+)",
       "dest": "/vercel/output/assets/$1"
     },
     {
