@@ -3,16 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "homepage": "https://iamdamba.herokuapp.com/",
   "engines": {
     "node": "14.x"
   },
   "scripts": {
-    "start": "node index.js",
     "dev": "nodemon index.js",
     "install-client": "cd client && yarn install",
     "build-client": "cd client && yarn build",
-    "vercel-build": "yarn install && yarn install-client && yarn build-client"
+    "vercel-build": "yarn install-client && yarn build-client"
   },
   "dependencies": {
     "cors": "^2.8.5",

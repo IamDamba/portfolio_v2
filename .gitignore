@@ -3,5 +3,4 @@
 exemple.json
 *node_modules
 .vercel
-*yarn.lock
 vercel
