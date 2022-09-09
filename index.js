@@ -15,7 +15,7 @@ const path = require("path");
 
 app.use(express.json());
 app.use(cors());
-app.use(express.static(path.join(__dirname, "./vercel/output")));
+app.use(express.static(path.join(__dirname, "/vercel/output")));
 
 //------------------| ROUTE
 
@@ -24,7 +24,7 @@ app.use("/api", router);
 
 // Front-End Routes
 app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "./vercel/output/index.html"));
+  res.sendFile(path.join(__dirname, "/vercel/output/", "index.html"));
 });
 
 //------------------| CONNECTION
